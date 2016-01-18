@@ -1,0 +1,7 @@
+total_storage_limit: 256M
+queue:
+- name: parser
+  rate: 1/s
+  bucket_size: 1
+  max_concurrent_requests: 1
+  target: parser

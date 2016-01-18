@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+{% include "commons/navbar.html" %}
+{% include "commons/register_modal.html" %}
+{% block content %}
+
+{% endblock %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+{% include "commons/register_modal.js.html" %}
+
+</body>
+</html>
